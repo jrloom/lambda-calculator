@@ -11,8 +11,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
   width: 300px;
   padding: 20px;
   background: #af1e39;
@@ -32,14 +30,13 @@
   background: #323335;
   border-radius: 20px;
   color: #ffffff;
+  font-size: 20px;
   text-align: right;
 }
 
 .buttons {
   display: flex;
   margin-top: 20px;
-  &__left {
-  }
   &__right {
     display: flex;
     flex-direction: column;
@@ -55,13 +52,19 @@
   box-shadow: 0 3px 0 rgba(0, 0, 0, 1);
   margin: 5px;
   color: #ffffff;
+  font-size: 20px;
   text-align: center;
   transition: box-shadow, 300ms;
   &__number {
     background: #094377;
+    &--zero {
+      width: 110px;
+      border-radius: 110px;
+    }
   }
   &__operator {
     background: #007291;
+    font-size: 30px;
   }
   &__special {
     background: #0b5d98;

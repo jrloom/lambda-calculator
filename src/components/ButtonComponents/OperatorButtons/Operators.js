@@ -3,11 +3,11 @@ import OperatorButton from "./OperatorButton";
 import { operators } from "../../../data";
 
 const Operators = () => {
-  const [operateState, setOperatorState] = useState(operators);
+  const [operatorState, setOperatorState] = useState(operators);
 
   return (
     <div className="buttons__right">
-      {operators.map((operator, index) => {
+      {operatorState.map((operator, index) => {
         return <OperatorButton operator={operator.char} key={index} />;
       })}
     </div>
