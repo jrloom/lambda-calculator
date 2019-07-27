@@ -3,7 +3,7 @@ import React from "react";
 const SpecialButton = props => {
   return (
     <>
-      <button>{props.special}</button>
+      <button className="btn btn__special">{props.special}</button>
     </>
   );
 };
